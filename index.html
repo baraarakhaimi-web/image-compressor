@@ -3,208 +3,693 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="smia-dyal-image.png">
+    <title>ImageCompress — Free Online Image Compressor</title>
+    <meta name="description" content="Compress JPG, PNG and WebP images online for free. Reduce image size while keeping excellent quality.">
 
-    <title>Image Compressor - Compress Images Online</title>
-    <meta name="description" content="Compress JPG, PNG and WebP images online without losing quality. Fast, free and private.">
+    <!-- Favicon (Khassk tzid chi tswira smitha favicon.ico f dossi) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="ImageCompress — Free Online Image Compressor">
+    <meta property="og:description" content="Compress JPG, PNG and WebP images online for free. Reduce image size while keeping excellent quality.">
+    <!-- Khassk tzid chi tswira smitha og-image.jpg (matalan 1200x630px) -->
+    <meta property="og:image" content="og-image.jpg">
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header class="navbar">
-        <div class="logo">
-            <span class="logo-icon">◈</span>
-            <span>ImageCompress</span>
-        </div>
+<!-- ================= NAVBAR ================= -->
 
-        <nav>
+<header class="navbar">
+    <div class="container nav-inner">
+
+        <a href="#" class="logo">
+            <i class="fa-solid fa-compress logo-icon"></i>
+            Image<span>Compress</span>
+        </a>
+
+        <nav class="nav-links">
             <a href="#compressor">Compressor</a>
-            <a href="#features">Features</a>
-            <a href="#about">About</a>
+            <a href="#how-it-works">How it works</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#faq">FAQ</a>
         </nav>
-    </header>
 
+        <a href="#compressor" class="nav-button">
+            Compress Now
+        </a>
 
-    <main>
+    </div>
+</header>
 
-        <!-- HERO -->
-        <section class="hero" id="compressor">
+<!-- ================= HERO ================= -->
 
-            <div class="hero-content">
+<section class="hero">
 
-                <div class="badge">
-                    ⚡ Fast & Private Image Compression
-                </div>
+    <div class="hero-glow"></div>
 
-                <h1>
-                    Compress images.<br>
-                    <span>Keep the quality.</span>
-                </h1>
+    <div class="container hero-content">
 
-                <p>
-                    Reduce image file size in seconds without sacrificing
-                    visual quality. Simple, fast and completely private.
-                </p>
-
-            </div>
-
-
-            <!-- UPLOAD BOX -->
-            <div class="compressor-box">
-
-                <div class="upload-area" id="uploadArea">
-
-                    <div class="upload-icon">
-                        ↑
-                    </div>
-
-                    <h2>Drop your images here</h2>
-
-                    <p>or click to browse from your device</p>
-
-                    <div class="formats">
-                        JPG · JPEG · PNG · WEBP
-                    </div>
-
-                    <input
-                        type="file"
-                        id="fileInput"
-                        accept="image/jpeg,image/png,image/webp"
-                        multiple
-                        hidden
-                    >
-
-                    <button id="uploadButton" type="button">
-                        Choose Images
-                    </button>
-
-                </div>
-
-
-                <!-- RESULTS WILL APPEAR HERE -->
-            <div id="results"></div>
-            <div class="batch-actions">
-    <button id="downloadAllButton" type="button" disabled>
-        Download All
-    </button>
-</div>
-
-            </div>
-
-        </section>
-
-
-        <!-- FEATURES -->
-        <section class="features" id="features">
-
-            <div class="section-title">
-                <span>WHY USE US?</span>
-
-                <h2>
-                    Everything you need to<br>
-                    optimize your images.
-                </h2>
-            </div>
-
-
-            <div class="feature-grid">
-
-                <div class="feature-card">
-                    <div class="feature-icon">⚡</div>
-
-                    <h3>Lightning Fast</h3>
-
-                    <p>
-                        Compress your images in seconds directly from
-                        your browser.
-                    </p>
-                </div>
-
-
-                <div class="feature-card">
-                    <div class="feature-icon">🔒</div>
-
-                    <h3>100% Private</h3>
-
-                    <p>
-                        Your images stay on your device. No unnecessary
-                        uploads to a server.
-                    </p>
-                </div>
-
-
-                <div class="feature-card">
-                    <div class="feature-icon">✨</div>
-
-                    <h3>High Quality</h3>
-
-                    <p>
-                        Reduce file size while keeping your images
-                        looking sharp.
-                    </p>
-                </div>
-
-
-                <div class="feature-card">
-                    <div class="feature-icon">📦</div>
-
-                    <h3>Batch Compression</h3>
-
-                    <p>
-                        Compress multiple images at the same time
-                        and save time.
-                    </p>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ABOUT -->
-        <section class="about" id="about">
-
-            <div>
-                <span>IMAGE OPTIMIZATION</span>
-
-                <h2>
-                    Smaller files.<br>
-                    Faster websites.
-                </h2>
-            </div>
-
-            <p>
-                Large images can slow down websites and increase loading
-                times. ImageCompress helps you reduce image sizes before
-                uploading them to your website, blog or online store.
-            </p>
-
-        </section>
-
-    </main>
-
-
-    <footer>
-
-        <div class="footer-logo">
-            ◈ ImageCompress
+        <div class="badge">
+            <span></span>
+            100% Free • No Upload Required
         </div>
+
+        <h1>
+            Compress images.
+            <strong>Keep the quality.</strong>
+        </h1>
 
         <p>
-            Fast · Private · Simple
+            Reduce JPG, PNG and WebP image sizes directly in your browser.
+            Fast, simple and completely free.
         </p>
+
+        <div class="hero-actions">
+            <a href="#compressor" class="primary-button">
+                Compress Image
+                <span>↓</span>
+            </a>
+
+            <a href="#how-it-works" class="secondary-button">
+                How it works
+            </a>
+        </div>
+
+        <div class="hero-features">
+            <div>
+                <b>⚡</b>
+                Fast processing
+            </div>
+
+            <div>
+                <b>🔒</b>
+                Private & secure
+            </div>
+
+            <div>
+                <b>∞</b>
+                No limits
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ================= COMPRESSOR ================= -->
+
+<section id="compressor" class="compressor-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <span>IMAGE COMPRESSOR</span>
+            <h2>Make your images lighter.</h2>
+            <p>
+                Choose an image and optimize it in seconds.
+            </p>
+        </div>
+
+
+        <!-- Upload -->
+
+        <div class="upload-box" id="uploadBox">
+
+            <input
+                type="file"
+                id="fileInput"
+                accept="image/jpeg,image/png,image/webp"
+                hidden
+            >
+
+            <div class="upload-icon">
+                ↑
+            </div>
+
+            <h3>Drop your image here</h3>
+
+            <p>
+                or click to browse
+            </p>
+
+            <button class="primary-button" id="uploadButton">
+                Choose Image
+            </button>
+
+            <small>
+                JPG, PNG or WebP • Max 20MB
+            </small>
+
+        </div>
+
+
+        <!-- Controls -->
+
+        <div class="controls" id="controls">
+
+            <div class="control">
+
+                <div class="control-top">
+                    <label for="quality">
+                        Compression Quality
+                    </label>
+
+                    <strong id="qualityValue">
+                        80%
+                    </strong>
+                </div>
+
+                <input
+                    type="range"
+                    id="quality"
+                    min="10"
+                    max="100"
+                    value="80"
+                >
+
+            </div>
+
+
+            <div class="control">
+
+                <div class="control-top">
+
+                    <label for="resizeToggle">
+                        Resize Image
+                    </label>
+
+                    <label class="switch">
+                        <input
+                            type="checkbox"
+                            id="resizeToggle"
+                        >
+                        <span></span>
+                    </label>
+
+                </div>
+
+                <div class="resize-options" id="resizeOptions">
+
+                    <div>
+                        <label>Width</label>
+
+                        <input
+                            type="number"
+                            id="resizeWidth"
+                            placeholder="Auto"
+                            min="1"
+                        >
+                    </div>
+
+                    <div>
+                        <label>Height</label>
+
+                        <input
+                            type="number"
+                            id="resizeHeight"
+                            placeholder="Auto"
+                            min="1"
+                        >
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Preview -->
+
+        <div class="preview-grid">
+
+            <!-- Original -->
+
+            <div class="preview-card">
+
+                <div class="preview-header">
+
+                    <span>Original</span>
+
+                    <strong id="originalSize">
+                        0 KB
+                    </strong>
+
+                </div>
+
+                <div class="preview-image" id="originalPreview">
+
+                    <div class="empty-preview">
+                        Original image preview
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Compressed -->
+
+            <div class="preview-card">
+
+                <div class="preview-header">
+
+                    <span class="green">
+                        Compressed
+                    </span>
+
+                    <strong id="compressedSize">
+                        0 KB
+                    </strong>
+
+                </div>
+
+                <div class="preview-image" id="compressedPreview">
+
+                    <div class="empty-preview">
+                        Compressed image preview
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Stats -->
+
+        <div class="stats">
+
+            <div>
+                <span>Original</span>
+                <strong id="statsOriginal">0 KB</strong>
+            </div>
+
+            <div>
+                <span>Compressed</span>
+                <strong id="statsCompressed">0 KB</strong>
+            </div>
+
+            <div>
+                <span>You save</span>
+                <strong class="green" id="statsSaved">
+                    0%
+                </strong>
+            </div>
+
+        </div>
+
+
+        <!-- Compress Button -->
+
+        <button
+            class="compress-button"
+            id="compressButton"
+            disabled
+        >
+            Compress Image
+            <span>→</span>
+        </button>
+
+
+        <!-- Download -->
+
+        <button
+            class="download-button"
+            id="downloadButton"
+            disabled
+        >
+            Download Compressed Image ↓
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= HOW IT WORKS ================= -->
+
+<section id="how-it-works" class="how-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <span>HOW IT WORKS</span>
+            <h2>Compress in 3 simple steps.</h2>
+        </div>
+
+        <div class="steps">
+
+            <div class="step">
+                <div class="step-number">01</div>
+                <h3>Choose an image</h3>
+                <p>
+                    Select any JPG, PNG or WebP image from your device.
+                </p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">02</div>
+                <h3>Adjust quality</h3>
+                <p>
+                    Choose the compression quality and resize if needed.
+                </p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">03</div>
+                <h3>Download</h3>
+                <p>
+                    Download your optimized image instantly.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= BENEFITS ================= -->
+
+<section class="benefits">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <span>WHY IMAGECOMPRESS</span>
+            <h2>Simple. Fast. Private.</h2>
+        </div>
+
+        <div class="benefit-grid">
+
+            <div class="benefit-card">
+                <div class="benefit-icon">⚡</div>
+                <h3>Lightning Fast</h3>
+                <p>
+                    Your image is processed directly in your browser.
+                </p>
+            </div>
+
+            <div class="benefit-card">
+                <div class="benefit-icon">🔒</div>
+                <h3>Private</h3>
+                <p>
+                    Your images don't need to be uploaded to a server.
+                </p>
+            </div>
+
+            <div class="benefit-card">
+                <div class="benefit-icon">💎</div>
+                <h3>Great Quality</h3>
+                <p>
+                    Reduce file size while keeping your images looking sharp.
+                </p>
+            </div>
+
+            <div class="benefit-card">
+                <div class="benefit-icon">∞</div>
+                <h3>Free</h3>
+                <p>
+                    Compress your images without creating an account.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= REVIEWS ================= -->
+
+<section id="reviews" class="reviews">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <span>USER REVIEWS</span>
+            <h2>Loved by creators worldwide.</h2>
+        </div>
+
+
+        <div class="review-grid">
+
+            <!-- ENGLISH -->
+
+            <article class="review-card">
+
+                <div class="review-user">
+
+                    <div class="avatar">
+                        AM
+                    </div>
+
+                    <div>
+                        <strong>Alex Morgan</strong>
+                        <span>Content Creator</span>
+                    </div>
+
+                </div>
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    "Super simple and surprisingly fast. I reduced my image
+                    sizes without any noticeable quality loss."
+                </p>
+
+            </article>
+
+
+            <!-- FRENCH -->
+
+            <article class="review-card">
+
+                <div class="review-user">
+
+                    <div class="avatar">
+                        CL
+                    </div>
+
+                    <div>
+                        <strong>Claire Laurent</strong>
+                        <span>Web Designer</span>
+                    </div>
+
+                </div>
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    "Très pratique ! L'outil est rapide, simple et parfait
+                    pour optimiser les images avant de les publier."
+                </p>
+
+            </article>
+
+
+            <!-- ARABIC -->
+
+            <article class="review-card">
+
+                <div class="review-user">
+
+                    <div class="avatar">
+                        MA
+                    </div>
+
+                    <div>
+                        <strong>محمد العلوي</strong>
+                        <span>مصمم مواقع</span>
+                    </div>
+
+                </div>
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p dir="rtl">
+                    "أداة ممتازة وسريعة. قدرت نصغر حجم الصور بسهولة
+                    وبجودة مزيانة بزاف."
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+    <!-- ================= ADD REVIEW FORM ================= -->
+<div class="add-review-box">
+    <h3>Add your review</h3>
+    <form id="reviewForm">
+        <div class="form-group">
+            <label for="reviewerName">Your Name</label>
+            <input type="text" id="reviewerName" placeholder="Ex: Sara Smith" required>
+        </div>
+
+        <div class="form-group">
+            <label for="reviewerRole">Your Role / Title</label>
+            <input type="text" id="reviewerRole" placeholder="Ex: Developer" required>
+        </div>
+
+        <div class="form-group">
+            <label for="reviewStars">Rating (1 to 5 Stars)</label>
+            <select id="reviewStars" required>
+                <option value="★★★★★">5 Stars (★★★★★)</option>
+                <option value="★★★★☆">4 Stars (★★★★☆)</option>
+                <option value="★★★☆☆">3 Stars (★★★☆☆)</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="reviewText">Your Comment</label>
+            <textarea id="reviewText" rows="3" placeholder="Write your feedback here..." required></textarea>
+        </div>
+
+        <button type="submit" class="primary-button">Submit Review</button>
+    </form>
+</div>
+
+</section>
+
+
+<!-- ================= FAQ ================= -->
+
+<section id="faq" class="faq-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <span>FAQ</span>
+            <h2>Frequently asked questions.</h2>
+        </div>
+
+        <div class="faq-list">
+
+            <details>
+                <summary>
+                    Is ImageCompress free?
+                    <span>+</span>
+                </summary>
+
+                <p>
+                    Yes. ImageCompress is free to use and doesn't require
+                    an account.
+                </p>
+            </details>
+
+
+            <details>
+                <summary>
+                    Are my images uploaded?
+                    <span>+</span>
+                </summary>
+
+                <p>
+                    No. Compression is performed directly in your browser
+                    using your device.
+                </p>
+            </details>
+
+
+            <details>
+                <summary>
+                    Which formats are supported?
+                    <span>+</span>
+                </summary>
+
+                <p>
+                    JPG, PNG and WebP images are supported.
+                </p>
+            </details>
+
+
+            <details>
+                <summary>
+                    Can I use it on my phone?
+                    <span>+</span>
+                </summary>
+
+                <p>
+                    Yes. ImageCompress works on smartphones, tablets and
+                    desktop computers.
+                </p>
+            </details>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+
+    <div class="container">
+
+        <span>READY?</span>
+
+        <h2>
+            Make your images lighter today.
+        </h2>
+
+        <p>
+            Free. Fast. No registration required.
+        </p>
+
+        <a href="#compressor" class="primary-button">
+            Compress an Image →
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    <div class="container footer-inner">
+
+        <div class="logo">
+            <span class="logo-icon">◆</span>
+            Image<span>Compress</span>
+        </div>
+
+        <!-- L'ma3loumat dyalek hna -->
+        <div class="founder-info">
+            <p>Created by <strong>Baraa Savage</strong></p>
+            <div class="social-links">
+                <a href="https://instagram.com/baraa_savage" target="_blank" rel="noopener">Instagram</a>
+                <a href="https://tiktok.com/@baraa_savage_" target="_blank" rel="noopener">TikTok</a>
+            </div>
+        </div>
 
         <p class="copyright">
-            © 2026 ImageCompress. All rights reserved.
+            © 2025 ImageCompress.<br>Free online image compression.
         </p>
 
-    </footer>
+    </div>
+</footer>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
 <script src="script.js"></script>
-
 
 </body>
 </html>
